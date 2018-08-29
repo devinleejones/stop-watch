@@ -6,7 +6,13 @@
 }
 
 h1 {
-  padding: 15rem 0;
+  padding: 15rem 0 2rem;
+  text-align: center;
+  font-size: 62px;
+}
+
+h3 {
+  color: white;
   text-align: center;
   font-size: 62px;
 }
