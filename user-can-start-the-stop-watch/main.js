@@ -1,4 +1,5 @@
-var $myButton = document.getElementById('startButton')
+var $myButton = document.querySelector('button')
 var $count = document.querySelector('h3')
 
-$startButton.addEventListener('click', newDigit)
+
+$myButton.addEventListener('click')
