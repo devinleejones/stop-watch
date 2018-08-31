@@ -22,6 +22,4 @@ function changeInterval() {
     $myButton.textContent = "Start"
     $myButton.classList.toggle("newButtonColor")
   }
-}
-
 $myButton.addEventListener('click', changeInterval)
