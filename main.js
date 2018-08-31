@@ -1,14 +1,25 @@
 var $myButton = document.querySelector('button')
-var $count = document.querySelector('h3')
+var $watchNumber = document.querySelector('h3')
+var currentTime = false
+var intervalID;
 
 function changeDigit() {
-  var elapsedTime = parseInt($count.textContent, 10)
-  elapsedTime += 1
-  $count.textContent = elapsedTime
+  var elapsedTime = parseInt($watchNumber.textContent, 10)
+  if (currentTime === true) {
+    elapsedTime += 1 //
+    $watchNumber.textContent = elapsedTime
+  }
 }
 
 function changeInterval() {
-  setInterval(changeDigit, 1000)
-}
-
+  currentTime = !currentTime
+  clearInterval(intervalID)
+  intervalID = setInterval(changeDigit, 1000)
+  if (currentTime === true) {
+    $myButton.textContent = "Pause"
+    $myButton.classList.toggle("newButtonColor")
+  } else {
+    $myButton.textContent = "Start"
+    $myButton.classList.toggle("newButtonColor")
+  }
 $myButton.addEventListener('click', changeInterval)
