@@ -62,8 +62,3 @@ button:focus {
   color: red;
   border-color: red;
 }
-
-.newButtonColorTwo {
-  background-color: rgb(42, 215, 48);
-  color: white;
-}
