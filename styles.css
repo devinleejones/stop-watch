@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+}
+
+ .container {
+  border: 5px solid white;
+  border-radius: 10rem;
+  margin: 10% 30% 10% 30%;
+  display: block;
+  padding: 5rem 0 5rem 0;
+  filter: drop-shadow(0 0 20px rgb(137, 200, 236));
+}
+ h1 {
+  padding: 0rem 0 2rem;
+  background-color: transparent;
+  font-weight: 900;
+  font-size: 62px;
+}
+ h3 {
+  font-size: 62px;
+  background-color: transparent;
+  font-weight: 900;
+  padding-bottom: 4rem;
+}
+ button {
+  font-size: 54px;
+  font-weight: 900;
+  display: block;
+  border-color: white;
+  background-color: rgb(42, 215, 48);
+  border-radius: 2.5rem;
+  border-width: 2.5px;
+  margin: 0 auto;
+  padding: .25rem 3rem;
+  filter: drop-shadow(0 0 20px);
+}
+ button:hover {
+  background-color: white;
+  cursor: pointer;
+  border-color: rgb(42, 215, 48);
+  color: rgb(42, 215, 48);
+}
+ button:focus {
+  outline: 0;
+}
+ .newButtonColor {
+  background-color: red;
+  color: white;
+}
+ .newButtonColor:hover {
+  background-color: white;
+  color: red;
+  border-color: red;
+}
+
+#resetButton {
+  margin-top: 1rem;
+  display: none;
+}
