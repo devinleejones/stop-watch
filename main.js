@@ -1,5 +1,6 @@
 var $myButton = document.querySelector('button')
 var $watchNumber = document.querySelector('h3')
+var $showResetButton = document.querySelector('.resetButton')
 var currentTime = false
 var intervalID;
  function changeDigit() {
@@ -16,6 +17,7 @@ var intervalID;
   if (currentTime === true) {
     $myButton.textContent = "Pause"
     $myButton.classList.toggle("newButtonColor")
+    $showResetButton.classList.toggle("revealButton")
   } else {
     $myButton.textContent = "Start"
     $myButton.classList.toggle("newButtonColor")

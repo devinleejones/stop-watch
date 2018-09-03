@@ -57,7 +57,11 @@
   border-color: red;
 }
 
-#resetButton {
+.resetButton {
   margin-top: 1rem;
   display: none;
+}
+
+.revealButton {
+  display: block;
 }
